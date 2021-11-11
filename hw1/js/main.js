@@ -226,7 +226,7 @@
 
 
 
-//CLASSWORK
+//CLASSWORK---------------------- CLASSWORK ------------------------------
 
 // 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result.
 
@@ -271,8 +271,8 @@
 // let width = 10;
 // let s = height * width;
 // console.log(s);
-//
-//
+
+
 
 // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
 // результат помістіть у змінну v.
@@ -296,6 +296,43 @@
 // let k = Math.sqrt(Math.pow(3, 2) + Math.pow(4, 2));
 // console.log(k)
 
+
+
+//ERROR ---------------------- ERROR ------------------------------
+
+// Ваше завдання, зробити так, щоб файл відкривався без помилок .
+
+// let a = 100;
+// let b = 500;
+// let c = "hello";
+// let d = "okten";
+// const x = 'constant value';
+// {
+//     console.log(a);
+//     x = 'new value';
+// }
+// let b = 'new value';
+//
+// let result = 100 + y;
+//
+// console(result);
+
+
+//RESOLVE
+// let a = 100;
+// let b = 500;
+// b = 1000
+// let c = "hello";
+// let d = "okten";
+// let y = 150;
+// const x = 'constant value';
+// {
+//     console.log(a);
+// }
+//
+// let result = 100 + y;
+//
+// console.log(result);
 
 
 
