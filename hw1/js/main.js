@@ -45,77 +45,77 @@
 // document.write(ua);
 // alert(ua);
 //
-// let one = "1";
+// let one = 1;
 // console.log(one);
 // document.write(one);
 // alert(one);
 //
-// one = "-1";
+// one = -1;
 // console.log(one);
 // document.write(one);
 // alert(one);
 //
-// let ten = "10";
+// let ten = 10;
 // console.log(ten);
 // document.write(ten);
 // alert(ten);
 //
-// ten = "20";
+// ten = 20;
 // console.log(ten);
 // document.write(ten);
 // alert(ten);
 //
-// let minusnine = "-999";
+// let minusnine = -999;
 // console.log(minusnine);
 // document.write(minusnine);
 // alert(minusnine);
 //
-// minusnine = "-666";
+// minusnine = -666;
 // console.log(minusnine);
 // document.write(minusnine);
 // alert(minusnine);
 //
-// let onetwothree = "123";
+// let onetwothree = 123;
 // console.log(onetwothree);
 // document.write(onetwothree);
 // alert(onetwothree);
 //
-// onetwothree = "321";
+// onetwothree = 321;
 // console.log(onetwothree);
 // document.write(onetwothree);
 // alert(onetwothree);
 //
-// let pi = "3.14";
+// let pi = 3.14;
 // console.log(pi);
 // document.write(pi);
 // alert(pi);
 //
-// pi = "6.18";
+// pi = 6.18;
 // console.log(pi);
 // document.write(pi);
 // alert(pi);
 //
-// let twodotseven = "2.7";
+// let twodotseven = 2.7;
 // console.log(twodotseven);
 // document.write(twodotseven);
 // alert(twodotseven);
 //
-// twodotseven = "88";
+// twodotseven = 88;
 // console.log(twodotseven);
 // document.write(twodotseven);
 // alert(twodotseven);
 //
-// let sixteen = "16";
+// let sixteen = 16;
 // console.log(sixteen);
 // document.write(sixteen);
 // alert(sixteen);
 //
-// sixteen = "69";
+// sixteen = 69;
 // console.log(sixteen);
 // document.write(sixteen);
 // alert(sixteen);
 //
-// let tru = "true";
+// let tru = true;
 // console.log(tru);
 // document.write(tru);
 // alert(tru);
@@ -144,7 +144,7 @@
 // let firstName = 'Roman';
 // let lastName = 'Tokarchuk';
 // let middleName = 'Mykolayovych';
-// let person = firstName+ lastName+ middleName
+// let person = firstName+ " "+ lastName+ " "+ middleName;
 // console.log(person)
 // document.write(person)
 
@@ -155,11 +155,10 @@
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Ім'ям, По-Батькові та роками.
 //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
 
-// let firstName = prompt("Roman");
-// let middleName = prompt("Mykolayovych");
-// let age = prompt("23");
-// alert("Вітаю Роман Миколайович. Тобі 23 роки");
-
+// let firstName = prompt("Your name:");
+// let middleName = prompt("Your middle name:");
+// let age = prompt("Your age:");
+// console.log(`Вітаю ${firstName} ${middleName}. Тобі ${age} років`);
 
 
 
@@ -168,13 +167,13 @@
 //     let a = 100; let b = '100'; let c = true;
 
 // let a = 100;
-// console.log(typeof (100))
+// console.log(typeof (a))
 //
-// // let b = '100';
-// console.log(typeof ('100'))
+// let b = '100';
+// console.log(typeof (b))
 //
-// // let c = true;
-// console.log(typeof (true))
+// let c = true;
+// console.log(typeof (c))
 
 
 
