@@ -192,6 +192,14 @@
 //     console.log(arrNum[i]);
 //     i++
 // }
+// У зворотному напрямку
+
+// i = arrNum.length - 1;
+// while (i >= 0) {
+//     console.log(arrNum[i]);
+//     i--
+// }
+
 
 
 //     2. перебрати його циклом for
@@ -199,7 +207,11 @@
 // for (let i = 0; i < arrNum.length; i++) {
 //     console.log(arrNum[i]);
 // }
+// У зворотному напрямку
 
+// for (let i = arrNum.length - 1; i >= 0; i--) {
+//     console.log(arrNum[i]);
+// }
 
 //     3. перебрати циклом while та вивести  числа тільки з непарним індексом
 
@@ -208,11 +220,22 @@
 //         console.log(arrNum[i]);
 //     i+=2
 // }
+// У зворотному напрямку
 
+// i = arrNum.length - 1;
+// while (i >= 0) {
+//     console.log(arrNum[i]);
+//     i-=2
+// }
 
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
 
 // for (let i = 1; i < arrNum.length; i += 2) {
+//     console.log(arrNum[i]);
+// }
+// У зворотному напрямку
+
+// for (let i = arrNum.length - 1; i >= 0; i -= 2) {
 //     console.log(arrNum[i]);
 // }
 
@@ -226,7 +249,15 @@
 //     }
 //     i++
 // }
+// У зворотному напрямку
 
+// i = arrNum.length - 1;
+// while (i >= 0) {
+//     if (arrNum[i] % 2 === 0) {
+//         console.log(arrNum[i]);
+//     }
+//     i--
+// }
 
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 
@@ -235,21 +266,41 @@
 //         console.log(arrNum[i])
 //     }
 // }
+// У зворотному напрямку
 
+// for (let i = arrNum.length - 1; i >= 0; i--) {
+//     if (arrNum[i] % 2 === 0) {
+//         console.log(arrNum[i]);
+//     }
+// }
 
 // 7. замінити кожне число кратне 3 на слово "okten"
 
-let arrNum = [2,17,13,6,22,31,45,66,100,-18]
+// let arrNum = [2,17,13,6,22,31,45,66,100,-18]
+//
+// for (let i = 3; i < arrNum.length; i+=3) {
+//     if (arrNum[i] % 3 === 0) {
+//         arrNum[i] = 'okten';
+//         console.log(arrNum[i]);
+//     }
+// }
+// У зворотному напрямку
 
-for (let i = 0; i < arrNum.length; i++) {
-    if (arrNum[i] % 3 === 0) {
-        arrNum[i] = 'okten';
-        console.log(arrNum[i]);
-    }
-}
+// for (let i = arrNum.length - 1; i >= 0; i--) {
+//     if (arrNum[i] % 3 === 0) {
+//         arrNum[i] = 'okten';
+//         console.log(arrNum[i]);
+//     }
+// }
 
-// 8. вивести масив в зворотньому порядку.
-// 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+// 8. вивести масив в зворотному порядку.
+
+// for (let i = arrNum.length-1; i >=0; i--) {
+//     console.log(arrNum[i]);
+// }
+
+
+// 9. всі попередні завдання (окрім 8), але в зворотному циклі (с заду на перед)
 
 
 
