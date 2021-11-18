@@ -97,28 +97,23 @@
 // let nums = [];
 // for (let i = 0; i < anyType.length; i++) {
 //     if (typeof (anyType[i]) === 'number') {
-//     // anyType.push(anyType[i])
-//         // console.log(nums)
+//         anyType.push(anyType[i])
+//         console.log(nums)
 //     }
 // }
-
-// if (anyType[i] === 'number') {
-//     nums.push(anyType[i]);
-// }
-
-// console.log(anyType);
 // console.log(nums);
 
 
-
 // - Дано 2 масиви з рівною кількістю об'єктів.
+// З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+//     Записати цей об'єкт в новий масив
 // Масиви:
-//     let usersWithId = [
-//         {id: 1, name: 'vasya', age: 31, status: false},
-//         {id: 2, name: 'petya', age: 30, status: true},
-//         {id: 3, name: 'kolya', age: 29, status: true},
-//         {id: 4, name: 'olya', age: 28, status: false}
-//     ];
+// let usersWithId = [
+//     {id: 1, name: 'vasya', age: 31, status: false},
+//     {id: 2, name: 'petya', age: 30, status: true},
+//     {id: 3, name: 'kolya', age: 29, status: true},
+//     {id: 4, name: 'olya', age: 28, status: false}
+// ];
 //
 // let citiesWithId = [
 //     {user_id: 3, country: 'USA', city: 'Portland'},
@@ -127,26 +122,15 @@
 //     {user_id: 4, country: 'USA', city: 'Miami'}
 // ];
 //
-// З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
-//     Записати цей об'єкт в новий масив
-// Example:
-//     let usersWithCities = [
-//             {
-//                 id: 1, // <===
-//                 name: 'vasya',
-//                 age: 31,
-//                 status: false,
-//                 address: {
-//                     user_id: 1, // <===
-//                     country: 'Ukraine',
-//                     city: 'Ternopil'
-//                 }
-//             },
-//             // TO BE CONTINUED .....
-//         ]
-//
-//
-//
+// for (let i = 0; i < usersWithId.length; i++) {
+//     let user = usersWithId[i];
+//     for (const city of citiesWithId) {
+//         if (city.user_id === user.id) {
+//             user.city = city;
+//         }
+//     }
+// }
+// console.log(usersWithId);
 
 
 //- Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
@@ -168,8 +152,7 @@
 
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
-
-let letter = ['a', 'b', 'c'];
+// let letter = ['a', 'b', 'c'];
 // let word = 0;
 // for (let i = 0; i < 1; i++) {
 //     word += 'a' + 'b' + 'c';
@@ -185,8 +168,8 @@ let letter = ['a', 'b', 'c'];
 // console.log(word);
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-let word = ''+'';
-for (const string of letter) {
-    letter += word
-}
-console.log(word);
+// let word = '';
+// for (const string of letter) {
+//     word = `${word}${string}`;
+// }
+// console.log(word);
