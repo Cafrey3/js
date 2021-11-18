@@ -170,7 +170,7 @@
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 
 let letter = ['a', 'b', 'c'];
-let word = 0;
+// let word = 0;
 // for (let i = 0; i < 1; i++) {
 //     word += 'a' + 'b' + 'c';
 // }
@@ -185,8 +185,8 @@ let word = 0;
 // console.log(word);
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-
+let word = ''+'';
 for (const string of letter) {
-    word += 'abc' ;
+    letter += word
 }
 console.log(word);
