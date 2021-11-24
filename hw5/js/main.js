@@ -53,8 +53,6 @@
 // createLi('li text');
 
 
-
-
 // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 // let createUl = (text, size) => {
@@ -67,7 +65,6 @@
 // }
 //
 // createUl('li text', 3);
-
 
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
@@ -103,21 +100,162 @@
 // userCount();
 
 
-
-
 //CLASSWORK -------------------------------- CLASSWORK -----------------------------------------------------------------
 
 
 // Всі функції повинні бути описані стрілочним типом!!!!
+
 //     - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+// let lowestNum = (a, b, c) => {
+//     if (a < b && a < c) {
+//         console.log(a);
+//     } else if (b < a && b < c) {
+//         console.log(b);
+//     } else {
+//         console.log(c);
+//     }
+// };
+// lowestNum(100, 200, 300);
+
+
 // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+
+// let highestNum = (a, b, c) => {
+//     if (a > b && a > c) {
+//         console.log(a);
+//     } else if (b > a && b > c) {
+//         console.log(b);
+//     } else {
+//         console.log(c);
+//     }
+// };
+// highestNum(100, 200, 300);
+
+
 // - створити функцію яка повертає найбільше число з масиву
+
+// let arr = [1000, 2000, 3000];
+// let arrNum = () => {
+//     if (arr[0] > arr[1] && arr[0] > arr[2]) {
+//         console.log(arr[0]);
+//     } else if (arr[1] > arr[0] && arr[1] > arr[2]) {
+//         console.log(arr[1]);
+//     } else {
+//         console.log(arr[2]);
+//     }
+// };
+// arrNum();
+
+
 // - створити функцію яка повертає найменьше число з масиву
+
+// let arr = [100, 200, 300];
+// let arrNum = () => {
+//     if (arr[0] < arr[1] && arr[0] < arr[2]) {
+//         console.log(arr[0]);
+//     } else if (arr[1] < arr[0] && arr[1] < arr[2]) {
+//         console.log(arr[1]);
+//     } else {
+//         console.log(arr[2]);
+//     }
+// };
+// arrNum();
+
+
+
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+// let arr = [100, 200, 300];
+// let sumNum = () => {
+//     let result = 0;
+//     for (const number of arr) {
+//         result += number;
+//     }
+//     console.log(result);
+//     return result;
+// };
+// sumNum();
+
+
+
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+// let arrMid = [10, 20, 30, 40, 50];
+// let middle = () => {
+//     let result = 0;
+//     for (const number of arrMid) {
+//         result += number / arrMid.length;
+//     }
+//     console.log(result);
+//     return result;
+// };
+// middle();
+
+
+
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+// let anyNum = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+//
+// let number = () => {
+//     let min = 0;
+//     let max = 0;
+//     for (const item of anyNum) {
+//         if (item < min) {
+//             min = item;
+//         }
+//         if (item > max) {
+//             max = item;
+//         }
+//     }
+//     console.log(max);
+//     return min;
+// };
+//
+// number();
+
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+// let arrEmpty = [];
+//
+// let arrFill = () => {
+//     for (let i = 0; i < 20; i++) {
+//         let filler = Math.round(Math.random() * 100);
+//         arrEmpty += filler;
+//         console.log(arrEmpty);
+//     }
+// };
+//
+//arrFill();
+
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+// let arrForNum = [];
+//
+// let fillerFunc = (size, limit) => {
+//     for (let i = 0; i < size; i++) {
+//         let filler = Math.round(Math.random() * limit);
+//         arrForNum += filler;
+//     }
+// };
+//
+// fillerFunc(20, 100);
+// console.log(arrForNum);
+
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+// let arrRev = [1, 2, 3];
+//
+// let reverse = () => {
+//     let newArr = [];
+//     for (let i = 0, ri = arrRev.length - 1; i < arrRev.length; i++, ri--) {
+//         newArr[ri] = arrRev[i];
+//     }
+//     console.log(newArr);
+//
+// };
+//
+// reverse();
 
