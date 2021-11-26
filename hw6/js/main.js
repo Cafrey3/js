@@ -69,7 +69,6 @@
 // console.log(delete_characters(str, 7));
 
 
-
 // - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами. При цьому всі символи рядка необхідно перевести у верхній регістр.
 //     let str = "HTML JavaScript PHP";
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
@@ -82,7 +81,6 @@
 // console.log(insert_dash());
 
 
-
 // - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
 // let firstUp = (str) => {
 //     return str[0].toUpperCase() + str.slice(1)
@@ -91,7 +89,82 @@
 
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
-let capitalize = (string) => {
-    return string.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ');
+// let capitalize = (string) => {
+//     return string.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ');
+// };
+// console.log(capitalize('js html css java php python'));
+
+
+//CLASSWORK ----------------------------------- CLASSWORK --------------------------------------------------------------
+
+
+// - Дано список імен.
+// let n1 = 'Harry..Potter'
+// let n2 = 'Ron---Whisley'
+// let n3 = 'Hermione__Granger'
+// Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+// let n1 = 'Harry Potter'
+// let n2 = 'Ron Whisley'
+// let n3 = 'Hermione Granger'
+
+// let n1Replace = n1.replaceAll('.', ' ');
+// console.log(n1Replace);
+//
+// let n2Replace = n2.replaceAll('-', ' ');
+// console.log(n2Replace);
+//
+// let n3Replace = n3.replaceAll('_', ' ');
+// console.log(n3Replace);
+
+//     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
+
+let arr = [];
+let arrNum = (size, limit) => {
+    for (let i = 0; i < size; i++) {
+        arr.push(Math.round(Math.random() * limit));
+    }
+    console.log(arr)
 };
-console.log(capitalize('js html css java php python'));
+arrNum(10, 100)
+
+// - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
+
+// let sort = arr.sort((a, b) => a - b);
+// console.log(sort);
+
+
+// - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, залишивши тільки парні числа
+
+// let filter = arr.filter(a => a % 2 === 0);
+// console.log(filter);
+
+
+
+// - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+
+// let map = arr.map(e => e.toString());
+// console.log(map);
+
+
+
+// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+//     let nums = [11,21,3];
+// sortNums('ascending') // [3,11,21]
+// sortNums('descending') // [21,11,3]
+
+
+
+
+
+
+// - є масив
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// -- відсортувати його за спаданням за monthDuration
+// -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
