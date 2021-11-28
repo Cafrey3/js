@@ -118,14 +118,14 @@
 
 //     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
-let arr = [];
-let arrNum = (size, limit) => {
-    for (let i = 0; i < size; i++) {
-        arr.push(Math.round(Math.random() * limit));
-    }
-    console.log(arr)
-};
-arrNum(10, 100)
+// let arr = [];
+// let arrNum = (size, limit) => {
+//     for (let i = 0; i < size; i++) {
+//         arr.push(Math.round(Math.random() * limit));
+//     }
+//     console.log(arr)
+// };
+// arrNum(10, 100)
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
 
@@ -139,12 +139,10 @@ arrNum(10, 100)
 // console.log(filter);
 
 
-
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
 // let map = arr.map(e => e.toString());
 // console.log(map);
-
 
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
@@ -152,9 +150,15 @@ arrNum(10, 100)
 // sortNums('ascending') // [3,11,21]
 // sortNums('descending') // [21,11,3]
 
-
-
-
+// let sortNums = (arr, direction) => {
+//     if (direction === 'asc') {
+//         return arr.sort((a, b) => a - b);
+//     } else if (direction === 'desc') {
+//         return arr.sort((a, b) => b - a);
+//     }
+//     return {};
+// };
+// console.log(sortNums([1, 2, 3], 'asc'));
 
 
 // - є масив
@@ -167,4 +171,13 @@ arrNum(10, 100)
 //     {title: 'Frontend', monthDuration: 4}
 // ];
 // -- відсортувати його за спаданням за monthDuration
+
+// coursesAndDurationArray.sort((a, b) => a.monthDuration - b.monthDuration);
+// console.log(coursesAndDurationArray);
+
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+
+// let newFilter = coursesAndDurationArray.filter((value) => {
+//         return value.monthDuration > 5;
+//     });
+// console.log(newFilter)
