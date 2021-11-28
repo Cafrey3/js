@@ -170,7 +170,7 @@
 //     {title: 'FullStack', monthDuration: 7},
 //     {title: 'Frontend', monthDuration: 4}
 // ];
-// -- відсортувати його за спаданням за monthDuration
+// -- відсортувати його за спаданням за monthDurations
 
 // coursesAndDurationArray.sort((a, b) => a.monthDuration - b.monthDuration);
 // console.log(coursesAndDurationArray);
