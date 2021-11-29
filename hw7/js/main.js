@@ -194,7 +194,7 @@ let result = (popArr, princ) => {
 };
 console.log(result(popArr, princ));
 
-//     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+//     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбек
 
 let emptyPrincess = popArr.find((item) => item.footSize === princ.shoe);
 console.log(emptyPrincess);
