@@ -20,9 +20,11 @@ for (const item of liWidth) {
 
 // d) отримує текст який зберігається в елементі з класом listElement2
 
-// let middleLi = document.getElementsByTagName('ul');
-// let l2 = middleLi[1];
-// console.log(middleLi[1].innerText);
+let text = document.getElementsByClassName('listElement2').innerText;
+// console.log(text)
+
+
+
 // e) отримує всі елементи li та змінює ім колір фону на сірий
 // f) отримує всі елементи 'a' та додає їм клас anchor
 // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
