@@ -8,6 +8,12 @@
 
 let tagDiv = document.createElement('div');
 tagDiv.classList.add('wrap', 'collapse', 'alpha', 'beta');
+tagDiv.style.backgroundcolor = 'limegreen';
+tagDiv.style.width= '300px';
+tagDiv.style.height= '300px';
+tagDiv.style.color= 'red';
+tagDiv.style.fontsize= '15px';
+tagDiv.style.textalign= 'center';
 document.body.appendChild(tagDiv);
 let tagP = document.createElement('p');
 tagP.innerText = 'loremloremloremloremloremloremlorem';
