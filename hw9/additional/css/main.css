@@ -1,18 +1,9 @@
-.userInfo {
-    display: flex;
-    column-gap: 10px;
-    font-family: sans-serif;
-}
-
-.email {
-    margin: 10px;
-    font-family: sans-serif;
-    color: blue;
-    width: 22%;
-
-}
-
 .email:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.website:hover {
     cursor: pointer;
     text-decoration: underline;
 }
