@@ -80,36 +80,6 @@
 //         }
 //     });
 
-// ADDITIONAL ---------------------------------------- ADDITIONAL ------------------------------------------------------
-
-// 1.
-// Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
-// https://jsonplaceholder.typicode.com/users
-//     кожному елементу юзера створити кнопку, при клику на яку в окремий блок виводяться всі пости поточного юзера.
-//     Кожному елементу post створити кнопку, при клику на яку в окремий блок виводяться всі коментарі поточного поста
-
-// fetch('https://jsonplaceholder.typicode.com/users')
-//     .then(value => {
-//         return value.json();
-//     })
-//     .then(users => {
-//         let box = document.createElement('div');
-//         box.classList.add('box');
-//         document.body.appendChild(box);
-//         for (const user of users) {
-//             let userCard = document.createElement('div');
-//             userCard.classList.add('user_card');
-//             box.appendChild(userCard);
-//
-//             let button = document.createElement("button");
-//             button.innerText = `User ${user.id}`;
-//             box.appendChild(button);
-//
-//             let userInfo = document.createElement('div');
-//             userInfo.
-//         }
-//     })
-
 
 
 
