@@ -1,0 +1,5 @@
+.user {
+    margin: 10px;
+    display: flex;
+    column-gap: 10px;
+}
