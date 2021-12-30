@@ -1,28 +1,37 @@
 let userDetails = JSON.parse(localStorage.getItem('userDetails'));
 for (const user of userDetails) {
     let div = document.createElement('div');
-    div.innerHTML = `${user.username}, ${user.email}, ${user.address.street}, ${user.address.suite}, ${user.address.city},
-    ${user.address.zipcode}, ${user.address.geo.lat},${user.address.geo.lng}, ${user.phone}, ${user.website},${user.company.name},${user.company.catchPhrase}, ${user.company.bs}`
+    div.innerHTML = `${user.id}, ${user.name}, ${user.username}, ${user.email}, ${user.address.street}, ${user.address.suite},
+    ${user.address.city},${user.address.zipcode}, ${user.address.geo.lat},${user.address.geo.lng}, ${user.phone}, ${user.website},
+    ${user.company.name},${user.company.catchPhrase}, ${user.company.bs}`;
+    let button = document.createElement('button');
+    button.innerText = 'post of current user';
 
-    document.body.appendChild(div)
+    button.onclick = function () {
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then((posts) => {
+                for (const post of posts) {
+                    if (user.id === post.userId) {
+                        let postDiv = document.createElement('div');
+                        postDiv.innerText = `title of user ${user.id} - ${post.title}`;
+                        document.body.appendChild(postDiv);
+
+                        let btnPost = document.createElement('button');
+                        btnPost.innerText = 'More info';
+                        postDiv.appendChild(btnPost);
+
+                        btnPost.onclick = function () {
+                            window.location.href = 'post details.html'
+                            let postArray = JSON.parse(localStorage.getItem('postArray')) || [];
+                            postArray.push(post);
+                            localStorage.setItem('postArray', JSON.stringify(postArray));
+                        };
+                    }
+                }
+            });
+    };
+
+    div.appendChild(button);
+    document.body.appendChild(div);
 }
-
-
-// username": "Bret",
-// "email": "Sincere@april.biz",
-//     "address": {
-//     "street": "Kulas Light",
-//         "suite": "Apt. 556",
-//         "city": "Gwenborough",
-//         "zipcode": "92998-3874",
-//         "geo": {
-//         "lat": "-37.3159",
-//             "lng": "81.1496"
-//     }
-// },
-// "phone": "1-770-736-8031 x56442",
-//     "website": "hildegard.org",
-//     "company": {
-//     "name": "Romaguera-Crona",
-//         "catchPhrase": "Multi-layered client-server neural-net",
-//         "bs": "harness re
