@@ -13,7 +13,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         for (const user of users) {
             let div = document.createElement('div');
             div.classList.add('user');
-            div.innerText = `${user.id}, ${user.name}`;
+            div.innerText = `${user.id}. ${user.name}`;
             wrap.appendChild(div);
 
             let a = document.createElement('a');
@@ -31,9 +31,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     });
 
 // Стилизация проекта -
-// index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.
-// user details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.
-// блоки с краткой информацией про post - в ряд по 5 объектов.
 // post details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.
-// Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)
+// Все без исключения элементы, которые характеризируют user,post,comment визуализировать, так, что бы было видно
+// их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)
 //
